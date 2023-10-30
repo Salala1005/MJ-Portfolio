@@ -24,34 +24,56 @@ h6 {
 p {
   margin: 0;
 }
+/* header section */
+
+.name {
+  width: 200px;
+  text-align: center;
+  background-color: rgba(110, 195, 199, 0.974);
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 30px;
+}
 
 .top-nav {
   display: flex;
-  list-style-type: none;
-  padding: 0;
+  justify-content: flex-end;
 }
 
 .top-nav-lists {
-  list-style-type: none;
-  padding: 0;
-  margin-left: 900px;
   display: flex;
-  flex-direction: row;
+  list-style-type: none;
+  padding-right: 30px;
+  margin: 0;
+  font-weight: bold;
 }
 
-.top-nav li a {
+.top-nav-lists li {
+  margin-right: 10px;
+}
+
+.top-nav-lists a {
   padding: 14px 16px;
   text-decoration: none;
-  /* padding: 0 20px; */
 }
+
+/* hero banner section */
 
 .image-banner {
   position: relative;
+  background-image:url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px;
 }
 
 .top-image {
   width: 100%;
   height: 100px;
+  object-fit: cover;
 }
 
 .banner-text {
@@ -60,15 +82,68 @@ p {
   top: 60px;
   left: 1000px;
   transform: translate(-50%, -50%);
-  background-color: rgba(29, 150, 193, 0.974);
+  background-color: rgba(110, 195, 199, 0.974);
   padding: 10px;
   z-index: 1; /* Place the text above the image */
 }
 
-.name {
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-left: 30px;
+/* main section */
+/* about me section goes here */
+.about-section {
+  display: flex ;
+  margin: 20px;
 }
+
+.sidebar {
+  display: flex;
+  width: 35%;
+  list-style-type: none;
+  border-right: 2px solid black;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar p {
+  text-align: end;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+  color:  rgba(110, 195, 199, 0.974);
+}
+
+.description {
+  width: 70%;
+  padding: 20px;
+}
+
+/* work section goes here */
+
+.page-section {
+  display: flex;
+}
+.section-title {
+  margin-right: 50px;
+  text-align: end;
+  width: 85%;
+  /* height: 400px; */
+  padding-right: 20px;
+  border-right: 2px solid black;
+  font-size: 20px;
+  color:  rgba(110, 195, 199, 0.974);
+}
+
+.row {
+  display: flex;
+}
+
+.row img {
+  /* max-width: 100%; */
+  height: auto;
+  width: 50%;
+}
+
+.big-card img{
+  width: 100%;
+} 
