@@ -1,53 +1,98 @@
 <!DOCTYPE html>
 <html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mijeong Jin // Web Developer</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mijeong Jin // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+  <body>
+    <!-- main logo / nav -->
+    <header>
+      <div id="logo">
+        <p class="name">Mijeong Jin</p>
+      </div>
+      <nav class="top-nav">
+        <ul class="top-nav-lists">
+          <li><a href="#About Me">About Me</a></li>
+          <li><a href="#Work">Work</a></li>
+          <li><a href="#Contact Me">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <!-- main logo / nav -->
-  <header>
-    <div id="logo">
-      <p class="name">Mijeong Jin</p>
-    </div>
-    <nav class="top-nav">
-      <ul class="top-nav-lists"> 
-        <li><a href="#About Me">About Me</a></li>
-        <li><a href="#Work">Work</a></li>
-        <li><a href="#Contact Me">Contact Me</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- hero banner -->
-  <section class="hero-banner">
-   <div class="image-banner">
-      <img src="./assets/images/02-hero-bg.jpg" class="top-image" alt="hero image banner">
-      <p class="banner-text">Cool subtitle here!</p>
-   </div>
-  </section>
-
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
+    <!-- hero banner -->
+    <section class="hero-banner">
+      <div class="image-banner">
+        <img
+          src="./assets/images/02-hero-bg.jpg"
+          class="top-image"
+          alt="hero image banner"
+        />
+        <p class="banner-text">Cool subtitle here!</p>
+      </div>
     </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
+    <main class="page-wrapper">
+      <!-- about me -->
+      <section class="page-section" id="about">
+        <div class="about-section">
+          <ul class="sidebar">
+            <li><p>About Me</p></li>
+          </ul>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur quia, blanditiis temporibus quidem tempore quibusdam
+              aliquid. Dolores delectus sapiente, id tempore nulla quae nostrum
+              quia fuga reprehenderit modi ab perferendis eius laudantium rerum.
+              Enim illo eum quaerat dicta quod. Dignissimos voluptas iste
+              necessitatibus quo asperiores nesciunt at eos excepturi inventore.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="section-title">
+          <h2>Work</h2>
+        </div>
+        <div>
+          <div class="row">
+            <div class="big-card"></div>
+            <a href="google.com" class="place-holder-1">
+              <img src="./assets/images/02-portfolio-4.jpg" alt="surfers"/>
+            </a>
+          </div>
+          <div class="row">
+            <div class="card">B</div>
+            <a href="google.com" class="place-holder-2">
+              <img src="./assets/images/02-portfolio-1.jpg" alt="red lights"/>
+            </a>
+            <div class="card">C</div>
+            <a href="google.com" class="place-holder-3">
+              <img src="./assets/images/02-portfolio-2.jpg"
+                alt="computer screen"/>
+            </a>
+          </div>
+          <div class="row">
+            <div class="card">D</div>
+            <a href="google.com" class="place-holder-4">
+              <img src="./assets/images/02-portfolio-3.jpg" alt="car"/>
+            </a>
+            <div class="card">E</div>
+            <a href="google.com" class="place-holder-5">
+              <img src="./assets/images/02-run-buddy.jpg" alt="webpage"/>
+            </a>
+          </div>
+        </div>
+      </section>
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main>
-</body>
-
+      <!-- contact -->
+      <section class="page-section contact" id="contact">
+        <h2>Contact Me</h2>
+      </section>
+    </main>
+  </body>
 </html>
