@@ -6,7 +6,8 @@
 }
 
 body {
-  margin: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
@@ -66,7 +67,7 @@ p {
   background-image:url(../images/02-hero-bg.jpg);
   background-size: cover;
   background-position: center;
-  width: auto;
+  width: 100%;
   height: 100px;
   background-image: no-repeat;
 }
@@ -81,7 +82,7 @@ p {
   position: absolute;
   width: 170px;
   top: 60px;
-  left: 1000px;
+  right: 0;
   transform: translate(-50%, -50%);
   background-color: rgba(110, 195, 199, 0.974);
   padding: 10px;
@@ -97,7 +98,6 @@ p {
 
 .sidebar {
   display: flex;
-  width: 35%;
   list-style-type: none;
   border-right: 5px solid rgba(31, 52, 54, 0.974);
 }
@@ -115,7 +115,7 @@ p {
 }
 
 .description {
-  width: 70%;
+  flex: 0 0 80%;
   padding: 20px;
 }
 
@@ -123,12 +123,14 @@ p {
 
 .page-section {
   display: flex;
+  justify-content: space-between;
   margin: 0px;
 }
 
 .section-title {
+  min-width: 180px;
   text-align: end;
-  width: 33.5%;
+  flex: 0 0 20%;
   padding-right: 20px;
   border-right: 5px solid rgba(31, 52, 54, 0.974);
   font-size: 20px;
@@ -140,63 +142,63 @@ p {
   display: flex;
   align-items: start;
 }
-
 .place-holder-1 img {
-  width: 1000px;
+  width: 100%;
   height: 150px;
   object-fit: cover;
   border: 6px solid  rgba(110, 195, 199, 0.974);
 }
 .place-holder-2 img {
-  width: 500px;
+  width: 100%;
   height: 150px;
   object-fit: cover;
   border: 6px solid  rgba(110, 195, 199, 0.974);
 }
 .place-holder-3 img {
-  width: 500px;
+  width: 100%;
   height: 150px;
   object-fit: cover;
   border: 6px solid  rgba(110, 195, 199, 0.974);
 }
 
 .place-holder-4 img {
-  width: 500px;
+  width: 100%;
   height: 150px;
   object-fit: cover;
   border: 6px solid  rgba(110, 195, 199, 0.974);
 }
 
 .place-holder-5 img {
-  width: 500px;
+  width: 100%;
   height: 150px;
   object-fit: cover;
   border: 6px solid  rgba(110, 195, 199, 0.974);
 }
-/* .images-container {
-  block-size: auto;
-  width: 1000px;
-  height: 600px;
-  justify-content: space-around;
-  align-items: start;
-} */
+.images-container {
+  flex: 0 0 80%;
+}
 .place-holder-1 {
+  width: 100%;
   display: inline-block;
   position: relative;
 }
 .place-holder-2 {
+  width: 50%;
   display: inline-block;
   position: relative;
 }
 .place-holder-3 {
+  width: 50%;
   display: inline-block;
   position: relative;
 }
 .place-holder-4 {
+  width: 50%;
   display: inline-block;
   position: relative;
 }
 .place-holder-5 {
+  width: 50%;
   display: inline-block;
   position: relative;
 }
@@ -210,13 +212,8 @@ p {
   padding: 5px;
   font-weight: bold;
 }
-/* to align top left and middle sidebar */
-/* .sidebar, .section-title {
-  display: block;
-  align-items: end;
-} */
-
 /* contact section goes here */
+
 .contact-title {
   text-align: end;
   width: 33.5%;
@@ -229,33 +226,11 @@ p {
   margin-left: 30px;
   display: flex;
   align-items: center;
-  width:900px;
+  width:100%;
   justify-content: space-evenly
 }
-@media only screen and (min-width: 1200px) {
-body { 
-  width: 1200px; 
-  /* border:1px solid red; */
-  /* display: flex; */
-  /* justify-content: center; */
-  }
 
-
-}
-
-@media only screen and (max-width: 600px) {
-.place-holder-1 img {
-  width: 500px;
-  }
-  .images-container {
-    /* block-size: auto;
-    width: 1000px;
-    height: 600px;
-    justify-content: space-around;
-    align-items: start; */
-    display: flex;
-    flex-direction: column;
-    border: 1px solid red;
-  }
-    /* input stuff here */
+@media only screen and (max-width: 576px) {
+.row a {width:100%;} 
+.row {flex-direction: column;}
 }
