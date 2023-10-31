@@ -98,7 +98,7 @@ p {
   display: flex;
   width: 35%;
   list-style-type: none;
-  border-right: 2px solid black;
+  border-right: 5px solid rgba(31, 52, 54, 0.974);
 }
 
 .sidebar li {
@@ -122,28 +122,84 @@ p {
 
 .page-section {
   display: flex;
+  margin: 0px;
 }
+
 .section-title {
-  margin-right: 50px;
   text-align: end;
-  width: 85%;
-  /* height: 400px; */
+  width: 33.5%;
   padding-right: 20px;
-  border-right: 2px solid black;
+  border-right: 5px solid rgba(31, 52, 54, 0.974);
   font-size: 20px;
   color:  rgba(110, 195, 199, 0.974);
 }
 
 .row {
+  margin-left: 30px;
   display: flex;
+  align-items: start;
+  /* border: 3px solid  rgba(110, 195, 199, 0.974); */
 }
 
-.row img {
-  /* max-width: 100%; */
-  height: auto;
-  width: 50%;
+.place-holder-1 img {
+  width: 1000px;
+  height: 200px;
+  object-fit: cover;
+  border: 6px solid  rgba(110, 195, 199, 0.974);
+}
+.place-holder-2 img {
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+  border: 6px solid  rgba(110, 195, 199, 0.974);
+}
+.place-holder-3 img {
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+  border: 6px solid  rgba(110, 195, 199, 0.974);
 }
 
-.big-card img{
-  width: 100%;
-} 
+.place-holder-4 img {
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+  border: 6px solid  rgba(110, 195, 199, 0.974);
+}
+
+.place-holder-5 img {
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+  border: 6px solid  rgba(110, 195, 199, 0.974);
+}
+.image-container {
+  width: 1000px;
+  height: 600px;
+  justify-content: space-around;
+  align-items: start;
+}
+
+/* to align top left and middle sidebar */
+/* .sidebar, .section-title {
+  display: block;
+  align-items: end;
+} */
+
+/* contact section goes here */
+.contact-title {
+  text-align: end;
+  width: 33.5%;
+  padding-right: 20px;
+  border-right: 5px solid rgba(31, 52, 54, 0.974);
+  font-size: 20px;
+  color:  rgba(110, 195, 199, 0.974);
+}
+.contact-links {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  width:fit-content;
+  justify-content: center;
+  padding-left: 300px;
+}
